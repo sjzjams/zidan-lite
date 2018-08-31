@@ -11,7 +11,7 @@ _可能是_ 宇宙最牛的高效沟通软件「子弹短信」的 `win` exe客�
 
 2.npm install electron-packager -g
 
-3.electron-packager . app --win --out chuizi --arch=x64 --version 12.1.1 --overwrite --ignore=node_modules
+3.electron-packager . app --win --out zidan --arch=x64 --electron-version 1.4.15 --overwrite --ignore=node_modules_modules
 
 
 [Releases](https://github.com/Lax/zidan-lite/releases)
