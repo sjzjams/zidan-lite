@@ -1,14 +1,19 @@
 # 子弹短信社区版
 
-_可能是_ 宇宙最牛的高效沟通软件「子弹短信」的 `macOS` 客户端
+_可能是_ 宇宙最牛的高效沟通软件「子弹短信」的 `win` exe客户端
 
 ![「子弹短信」社区版 Lite](.assets/screenshot.jpeg)
 
 
 ## Install 分三步
+
 1.npm install
+
 2.npm install electron-packager -g
+
 3.electron-packager . app --win --out chuizi --arch=x64 --version 12.1.1 --overwrite --ignore=node_modules
+
+
 [Releases](https://github.com/Lax/zidan-lite/releases)
 
 
