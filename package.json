@@ -3,10 +3,12 @@
     "version": "1.0.0",
     "main": "main.js",
     "scripts": {
-        "start": "electron ."
+        "start": "electron .",
+        "package": "electron-packager . app --win --out zidan --arch=x64 --electron-version 1.4.15 --overwrite --ignore=node_modules_modules"
     },
     "devDependencies": {
-        "electron": "^2.0.8"
+        "electron": "^2.0.8",
+        "electron-winstaller": "^2.6.4"
     },
     "dependencies": {
         "asar": "^0.14.3"
