@@ -1,6 +1,6 @@
 const {app, BrowserWindow, Tray} = require('electron')
 var path = require('path')
-
+const url = require('url')
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
@@ -19,7 +19,11 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('index.html')
+  mainWindow.loadURL(url.format({
+    pathname: path.join(__dirname, 'index.html'),
+    protocol: 'file:',
+    slashes: true
+  }))
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
