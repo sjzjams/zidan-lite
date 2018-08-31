@@ -5,8 +5,10 @@ _可能是_ 宇宙最牛的高效沟通软件「子弹短信」的 `macOS` 客�
 ![「子弹短信」社区版 Lite](.assets/screenshot.jpeg)
 
 
-## Install
-
+## Install 分三步
+npm install
+npm install electron-packager -g
+electron-packager . app --win --out chuizi --arch=x64 --version 12.1.1 --overwrite --ignore=node_modules
 [Releases](https://github.com/Lax/zidan-lite/releases)
 
 
